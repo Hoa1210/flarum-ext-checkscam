@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Hoa1210\\CheckScam;
+namespace Hoa1210\CheckScam;
 
 use Flarum\Extend;
 
