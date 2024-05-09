@@ -26,7 +26,7 @@
             "title": "Checkscam",
             "category": "",
             "icon": {
-                "name": "fa-solid fa-triangle-exclamation",
+                "name": "fas fa-triangle-exclamation",
                 "color": "#ffffff",
                 "backgroundColor": "#ec2222"
             }
