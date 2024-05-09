@@ -1,8 +1,8 @@
-# Checkscam
+# CheckScam
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/hoa1210/flarum-ext-checkscam.svg)](https://packagist.org/packages/hoa1210/flarum-ext-checkscam) [![Total Downloads](https://img.shields.io/packagist/dt/hoa1210/flarum-ext-checkscam.svg)](https://packagist.org/packages/hoa1210/flarum-ext-checkscam)
 
-A [Flarum](http://flarum.org) extension. Flarum extension check scam
+A [Flarum](http://flarum.org) extension. Flarum checkscam
 
 ## Installation
 

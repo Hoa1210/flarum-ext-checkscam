@@ -1,6 +1,6 @@
 {
     "name": "hoa1210/flarum-ext-checkscam",
-    "description": "Flarum extension check scam",
+    "description": "Flarum checkscam",
     "keywords": [
         "flarum"
     ],
@@ -11,24 +11,24 @@
     },
     "authors": [
         {
-            "name": "Hoa1210",
-            "email": "luonghoa121002@gmai.com",
+            "name": "Luong Hoa",
+            "email": "luonghoa121002@gmail.com",
             "role": "Developer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Hoa1210\\Checkscam\\": "src/"
+            "Hoa1210\\CheckScam\\": "src/"
         }
     },
     "extra": {
         "flarum-extension": {
-            "title": "Checkscam",
+            "title": "CheckScam",
             "category": "",
             "icon": {
-                "name": "fa-solid fa-triangle-exclamation",
-                "color": "#ffffff",
-                "backgroundColor": "#ec2222"
+                "name": "",
+                "color": "",
+                "backgroundColor": ""
             }
         },
         "flarum-cli": {
@@ -42,7 +42,7 @@
                 "gitConf": true,
                 "githubActions": true,
                 "prettier": true,
-                "typescript": true,
+                "typescript": false,
                 "bundlewatch": true,
                 "backendTesting": true,
                 "editorConfig": true,
@@ -54,7 +54,7 @@
     "prefer-stable": true,
     "autoload-dev": {
         "psr-4": {
-            "Hoa1210\\Checkscam\\Tests\\": "tests/"
+            "Hoa1210\\CheckScam\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -74,9 +74,5 @@
     },
     "require-dev": {
         "flarum/testing": "^1.0.0"
-    },
-    "repositories": [{
-            "type": "path",
-            "url": "packages/*"
-        }]
+    }
 }

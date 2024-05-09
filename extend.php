@@ -3,13 +3,13 @@
 /*
  * This file is part of hoa1210/flarum-ext-checkscam.
  *
- * Copyright (c) 2024 Hoa1210.
+ * Copyright (c) 2024 Luong Hoa.
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace Hoa1210\Checkscam;
+namespace Hoa1210\\CheckScam;
 
 use Flarum\Extend;
 
