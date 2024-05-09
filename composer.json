@@ -26,9 +26,9 @@
             "title": "CheckScam",
             "category": "",
             "icon": {
-                "name": "",
-                "color": "",
-                "backgroundColor": ""
+                "name": "fas fa-magic",
+                "color": "#d83e3e",
+                "backgroundColor": "#ffffffed"
             }
         },
         "flarum-cli": {
