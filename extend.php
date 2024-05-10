@@ -22,6 +22,8 @@ return [
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less'),
     new Extend\Locales(__DIR__.'/locale'),
+    (new Extend\Frontend('forum'))
+        ->route('/users', 'acme.users'),
     (new Extend\Routes('forum'))
-        ->get('/check-scam', 'chẹckscam.index', CheckScamController::class)
+        ->get('/check-scam', 'check-scam', CheckScamController::class)
 ];
