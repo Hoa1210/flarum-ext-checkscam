@@ -31,7 +31,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_app__WEBPACK_IMPORTED_MODULE_0__);
 
 flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('hoa1210/flarum-ext-checkscam', function () {
-  console.log('[hoa1210/flarum-ext-checkscam123ss] Hello, forum!');
+  console.log('[hoa1210/flarum-ext-checkscam] Hello, forum!');
 });
 
 /***/ }),
