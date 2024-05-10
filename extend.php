@@ -11,6 +11,7 @@
 
 namespace Hoa1210\CheckScam;
 
+use Controller\CheckScamController;
 use Flarum\Extend;
 
 return [
@@ -21,4 +22,6 @@ return [
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less'),
     new Extend\Locales(__DIR__.'/locale'),
+    (new Extend\Routes('forum'))
+        ->get('/check-scam', 'chẹckscam.index', CheckScamController::class)
 ];
