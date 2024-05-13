@@ -2,7 +2,7 @@ hoa1210-checkscam:
   # For more details on the format
   # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
   admin:
-    my_cool_key: My Cool Key
+    my_cool_key: Chìa khóa tuyệt vời của tôi
 
   forum:
-    checkscam: Check scamer
+    checkscam: Kiểm tra người lừa đảo
