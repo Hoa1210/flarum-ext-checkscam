@@ -6,3 +6,9 @@ hoa1210-checkscam:
 
   forum:
     checkscam: Check scamer
+    modal:
+      title: Scammer information
+      submit: Send
+    controls:
+      post:
+      new: Report scammer

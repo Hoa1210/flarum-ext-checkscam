@@ -6,3 +6,8 @@ hoa1210-checkscam:
 
   forum:
     checkscam: Kiểm tra người lừa đảo
+    modal: 
+      title: Thông tin người lừa đảo
+    controls:
+      post: 
+      new: Tố cáo scammer

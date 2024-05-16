@@ -12,7 +12,7 @@ return Migration::createTable(
         $table->foreign('scammer_id')
             ->references('id')
             ->on('scammers')
-            ->cascadeOnDelete();
+            ->onDelete('set null');
         $table->string('image_path');
     }
 );

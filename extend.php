@@ -11,8 +11,13 @@
 
 namespace Hoa1210\CheckScam;
 
-use Controller\CheckScamController;
 use Flarum\Extend;
+use Flarum\Extend\User;
+use Hoa1210\CheckScam\Controllers\CreateScammerController;
+use Hoa1210\CheckScam\Controllers\DeleteScammerController;
+use Hoa1210\CheckScam\Controllers\ListScammerController;
+use Hoa1210\CheckScam\Controllers\ShowScammerController;
+use Hoa1210\CheckScam\Controllers\UpdateScammerController;
 
 return [
     (new Extend\Frontend('forum'))
@@ -25,7 +30,10 @@ return [
 
     new Extend\Locales(__DIR__.'/locale'),
 
-    (new Extend\Routes('forum'))
-        ->get('/check-scam', '/check-scam', CheckScamController::class),
-
+    (new Extend\Routes('api'))
+    ->get('/scammers', 'scammers.index', ListScammerController::class)
+    ->post('/scammers', 'scammers.store', CreateScammerController::class)
+    ->get('/scammers/{id:[0-9]+}', 'scammers.show', ShowScammerController::class)
+    ->put('/scammers/{id:[0-9]+}', 'scammers.update', UpdateScammerController::class)
+    ->delete('/scammers/{id:[0-9]+}', 'scammers.delete', DeleteScammerController::class)
 ];
