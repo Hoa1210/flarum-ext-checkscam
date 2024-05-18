@@ -105,23 +105,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('hoa1210/flarum-ext-checkscam', function () {
-
   // app.store.models.scammers = Scammer;
 
-  // extend(IndexPage.prototype, 'sidebarItems', function (items) {
-  //   items.add(
-  //     'newDiscussion',
-  //     Button.component(
-  //       {
-  //         className: 'Button Button--primary IndexPage-newDiscussion',
-  //         onclick: () => {
-  //           // Add your custom functionality here
-  //           app.modal.show(ScammerModal);
-  //         },
-  //       }, [app.translator.trans('flarum-ext-checkscam.forum.controls.new')]
-  //     )
-  //   );
-  // });
+  (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__.extend)((flarum_forum_components_IndexPage__WEBPACK_IMPORTED_MODULE_2___default().prototype), 'sidebarItems', function (items) {
+    items.add('newDiscussion', flarum_components_Button__WEBPACK_IMPORTED_MODULE_4___default().component({
+      className: 'Button Button--primary IndexPage-newDiscussion',
+      onclick: function onclick() {
+        // Add your custom functionality here
+        flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().modal.show(_components_ScammerModal__WEBPACK_IMPORTED_MODULE_3__["default"]);
+      }
+    }, [flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().translator.trans('flarum-ext-checkscam.forum.controls.new')]));
+  });
 });
 
 /***/ }),

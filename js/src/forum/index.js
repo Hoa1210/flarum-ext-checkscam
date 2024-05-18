@@ -10,18 +10,18 @@ app.initializers.add('hoa1210/flarum-ext-checkscam', () => {
   // app.store.models.scammers = Scammer;
   
 
-  // extend(IndexPage.prototype, 'sidebarItems', function (items) {
-  //   items.add(
-  //     'newDiscussion',
-  //     Button.component(
-  //       {
-  //         className: 'Button Button--primary IndexPage-newDiscussion',
-  //         onclick: () => {
-  //           // Add your custom functionality here
-  //           app.modal.show(ScammerModal);
-  //         },
-  //       }, [app.translator.trans('flarum-ext-checkscam.forum.controls.new')]
-  //     )
-  //   );
-  // });
+  extend(IndexPage.prototype, 'sidebarItems', function (items) {
+    items.add(
+      'newDiscussion',
+      Button.component(
+        {
+          className: 'Button Button--primary IndexPage-newDiscussion',
+          onclick: () => {
+            // Add your custom functionality here
+            app.modal.show(ScammerModal);
+          },
+        }, [app.translator.trans('flarum-ext-checkscam.forum.controls.new')]
+      )
+    );
+  });
 });
