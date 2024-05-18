@@ -47,8 +47,8 @@ var ScammerModal = /*#__PURE__*/function (_Modal) {
   }
   (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(ScammerModal, _Modal);
   var _proto = ScammerModal.prototype;
-  _proto.oninit = function oninit(vnode) {
-    _Modal.prototype.oninit.call(this, vnode);
+  _proto.oncreate = function oncreate(vnode) {
+    _Modal.prototype.oncreate.call(this, vnode);
     this.scammerName = '';
   };
   _proto.title = function title() {
