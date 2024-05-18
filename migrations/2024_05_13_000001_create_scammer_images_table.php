@@ -4,7 +4,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 use Flarum\Database\Migration;
 
-return Migration::createTable(
+return Migration::createTableIfNotExists(
     'scammer_images',
     function (Blueprint $table) {
         $table->increments('id');

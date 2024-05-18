@@ -12,7 +12,6 @@
 namespace Hoa1210\CheckScam;
 
 use Flarum\Extend;
-use Flarum\Extend\User;
 use Hoa1210\CheckScam\Controllers\CreateScammerController;
 use Hoa1210\CheckScam\Controllers\DeleteScammerController;
 use Hoa1210\CheckScam\Controllers\ListScammerController;
