@@ -4,8 +4,8 @@ import Button from 'flarum/components/Button';
 
 export default class ScammerModal extends Modal{
 
-    oncreate(vnode){
-        super.oncreate(vnode);
+    oninit(vnode){
+        super.oninit(vnode);
         this.scammerName = '';
     }
 
@@ -47,5 +47,9 @@ export default class ScammerModal extends Modal{
 
             throw error;
         });
+    }
+
+    className(){
+        super.className();
     }
 }
