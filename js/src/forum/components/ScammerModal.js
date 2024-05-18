@@ -50,6 +50,6 @@ export default class ScammerModal extends Modal{
     }
 
     className(){
-        super.className();
+        // super.className();
     }
 }

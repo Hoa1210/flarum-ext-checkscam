@@ -81,7 +81,7 @@ var ScammerModal = /*#__PURE__*/function (_Modal) {
     });
   };
   _proto.className = function className() {
-    _Modal.prototype.className.call(this);
+    // super.className();
   };
   return ScammerModal;
 }((flarum_components_Modal__WEBPACK_IMPORTED_MODULE_1___default()));
