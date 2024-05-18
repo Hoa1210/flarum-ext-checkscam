@@ -67,15 +67,13 @@ var ScammerModal = /*#__PURE__*/function (_Modal) {
     }, [flarum_app__WEBPACK_IMPORTED_MODULE_2___default().translator.trans('flarum-ext-checkscam.forum.modal.submit')])])]);
   };
   _proto.onsubmit = function onsubmit(event) {
-    var _this2 = this;
     event.preventDefault();
-    this.loading = true;
     flarum_app__WEBPACK_IMPORTED_MODULE_2___default().store.createRecord('scammers').save({
       scammerName: this.scammerName
     }).then(function () {
       flarum_app__WEBPACK_IMPORTED_MODULE_2___default().modal.close();
     })["catch"](function (error) {
-      _this2.loading = false;
+      console.log(error);
       m.redraw();
       throw error;
     });
@@ -114,8 +112,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 flarum_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('hoa1210/flarum-ext-checkscam', function () {
-  // app.store.models.scammers = Scammer;
-
+  (flarum_app__WEBPACK_IMPORTED_MODULE_0___default().store).models.scammers = _models_Scammer__WEBPACK_IMPORTED_MODULE_5__["default"];
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__.extend)((flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_2___default().prototype), 'sidebarItems', function (items) {
     items.add('newDiscussion', flarum_components_Button__WEBPACK_IMPORTED_MODULE_4___default().component({
       className: 'Button Button--primary IndexPage-newDiscussion',

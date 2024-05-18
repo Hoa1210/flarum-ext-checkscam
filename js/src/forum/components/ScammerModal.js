@@ -34,7 +34,6 @@ export default class ScammerModal extends Modal{
 
     onsubmit(event){
         event.preventDefault();
-        this.loading = true;
 
         app.store.createRecord('scammers').save({
             scammerName: this.scammerName,
@@ -42,7 +41,7 @@ export default class ScammerModal extends Modal{
         }).then(() => {
             app.modal.close();
         }).catch(error => {
-            this.loading = false;
+            console.log(error);
             m.redraw();
 
             throw error;

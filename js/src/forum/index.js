@@ -7,7 +7,7 @@ import Scammer from './models/Scammer';
 
 app.initializers.add('hoa1210/flarum-ext-checkscam', () => {
 
-  // app.store.models.scammers = Scammer;
+  app.store.models.scammers = Scammer;
   
 
   extend(IndexPage.prototype, 'sidebarItems', function (items) {
