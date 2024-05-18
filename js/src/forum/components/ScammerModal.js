@@ -1,5 +1,5 @@
 import Modal from 'flarum/components/Modal';
-import app from 'flarum/forum/app';
+import app from 'flarum/app';
 import Button from 'flarum/components/Button';
 
 export default class ScammerModal extends Modal{

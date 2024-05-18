@@ -1,6 +1,6 @@
-import app from 'flarum/forum/app';
+import app from 'flarum/app';
 import { extend } from 'flarum/common/extend';
-import IndexPage from 'flarum/forum/components/IndexPage';
+import IndexPage from 'flarum/components/IndexPage';
 import ScammerModal from './components/ScammerModal';
 import Button from 'flarum/components/Button';
 import Scammer from './models/Scammer';
