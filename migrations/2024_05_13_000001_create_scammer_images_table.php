@@ -12,8 +12,8 @@ return Migration::createTableIfNotExists(
         $table->foreign('scammer_id')
             ->references('id')
             ->on('scammers')
-            ->onDelete('set null');
-        $table->string('image_path');
+            ->onDelcascadeOnUpdateete();
+        $table->string('image_path')->nullable();
     }
 );
 
