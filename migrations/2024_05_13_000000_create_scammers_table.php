@@ -8,15 +8,15 @@ return Migration::createTable(
     'scammers',
     function (Blueprint $table) {
         $table->increments('id');
-        $table->text('reason');
-        $table->string('scammer_name');
+        $table->text('reason')->nullable();
+        $table->string('scammer_name')->nullable();
         $table->string('scammer_phone')->nullable();
         $table->string('scammer_email')->nullable();
-        $table->string('scammer_bank')->comment('Tên ngân hàng - Số tài khoản (Số thẻ) - Tên người thụ hưởng');
+        $table->string('scammer_bank')->comment('Tên ngân hàng - Số tài khoản (Số thẻ) - Tên người thụ hưởng')->nullable();
         $table->string('scammer_facebook')->nullable();
         $table->boolean('is_owner')->default(true);
         $table->text('description')->nullable();
-        $table->unsignedInteger('create_by');
+        $table->unsignedInteger('create_by')->nullable();
         $table->foreign('create_by')
             ->references('id')
             ->on('users')
