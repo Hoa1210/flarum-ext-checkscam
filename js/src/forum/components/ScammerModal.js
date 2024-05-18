@@ -5,7 +5,7 @@ import Button from 'flarum/components/Button';
 export default class ScammerModal extends Modal{
 
     oninit(vnode){
-        super.oninit(vnode);
+        // super.oninit(vnode);
         this.scammerName = '';
     }
 
