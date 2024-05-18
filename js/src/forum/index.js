@@ -20,7 +20,7 @@ app.initializers.add('hoa1210/flarum-ext-checkscam', () => {
   //           // Add your custom functionality here
   //           app.modal.show(ScammerModal);
   //         },
-  //       }, [app.translator.trans('hoa1210-checkscam.forum.controls.new')]
+  //       }, [app.translator.trans('flarum-ext-checkscam.forum.controls.new')]
   //     )
   //   );
   // });

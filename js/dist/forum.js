@@ -52,7 +52,7 @@ var ScammerModal = /*#__PURE__*/function (_Modal) {
     this.scammerName = '';
   };
   _proto.title = function title() {
-    return [flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().translator.trans('hoa1210-checkscam.forum.modal.title')];
+    return [flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().translator.trans('flarum-ext-checkscam.forum.modal.title')];
   };
   _proto.content = function content() {
     var _this = this;
@@ -64,7 +64,7 @@ var ScammerModal = /*#__PURE__*/function (_Modal) {
     })]), m('.Form-group', [flarum_components_Button__WEBPACK_IMPORTED_MODULE_3___default().component({
       type: 'submit',
       className: 'Button Button--primary Button--block'
-    }, [flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().translator.trans('hoa1210-checkscam.forum.modal.submit')])])]);
+    }, [flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().translator.trans('flarum-ext-checkscam.forum.modal.submit')])])]);
   };
   _proto.onsubmit = function onsubmit(event) {
     event.preventDefault();
@@ -118,7 +118,7 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default().initializers.add('hoa121
   //           // Add your custom functionality here
   //           app.modal.show(ScammerModal);
   //         },
-  //       }, [app.translator.trans('hoa1210-checkscam.forum.controls.new')]
+  //       }, [app.translator.trans('flarum-ext-checkscam.forum.controls.new')]
   //     )
   //   );
   // });

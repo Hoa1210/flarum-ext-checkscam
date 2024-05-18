@@ -10,7 +10,7 @@ export default class ScammerModal extends Modal{
     }
 
     title(){
-        return [app.translator.trans('hoa1210-checkscam.forum.modal.title')];
+        return [app.translator.trans('flarum-ext-checkscam.forum.modal.title')];
     }
 
     content(){
@@ -27,7 +27,7 @@ export default class ScammerModal extends Modal{
                 Button.component({
                     type: 'submit',
                     className: 'Button Button--primary Button--block'
-                }, [app.translator.trans('hoa1210-checkscam.forum.modal.submit')])
+                }, [app.translator.trans('flarum-ext-checkscam.forum.modal.submit')])
             ]),
         ]);
     }
